@@ -1,0 +1,76 @@
+.navbar
+  &__logo
+    max-width: 177px
+  &-menu
+    background-color: $site-background-dark
+    font-size: 14px
+    line-height: 18px
+    color: $font-white
+    text-transform: uppercase
+    padding: 31px 0
+    letter-spacing: 0.2px
+    &__item
+      &--mobile-visible
+        display: none
+        font-weight: bold
+    &__link
+      font-weight: bold
+.navbar-top
+  background-color: #ffffff
+  height: 120px
+  &__container
+    height: 100%
+    +flex-sb-center
+  &__search
+    margin-right: auto
+    margin-left: 108px
+  &__menu-button
+    display: none
+
+
+.search
+  width: 350px
+  height: 40px
+  position: relative
+  overflow: hidden
+  border-radius: 6px
+  height: 40px
+  &__input
+    width: 350px
+    height: 100%
+    border: none
+    background-color: $site-background-lite
+    font-size: 12px
+    line-height: 15px
+    color: $font-grey
+    padding-left: 26px
+    padding-right: 90px
+  &__btn
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    width: 65px
+    background-color: $buttons-red
+    border: none
+    color: $font-white
+    &:hover
+      background-color: $buttons-hover
+
+.user
+  +flex-fs-center
+  &__avatar
+    width: 40px
+    height: 40px
+    object-fit: cover
+    border-radius: 50%
+  &__name
+    margin-left: 16px
+    font-size: 14px
+    line-height: 18px
+    &--mobile
+      margin-left: 0
+      text-transform: capitalize
+.navbar-menu
+  &__wrapper
+    +flex-sb-center

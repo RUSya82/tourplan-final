@@ -1,0 +1,50 @@
+.newsletter
+  position: relative
+  padding: 98px 0 87px 0
+  background: url("../img/newsletter-bg.jpg")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  &__input-wrapper
+    height: 100%
+  &-container
+    position: relative
+    max-width: 731px
+    +flex-sb-center
+  &:before
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($site-background-dark, 0.8)
+  &__text
+    color: $font-white
+    +flex(column)
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    &--big
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 45px
+      text-transform: uppercase
+  &-input
+    height: 55px
+    overflow: visible
+    &__text
+      font-weight: 300
+      font-size: 14px
+      color: #BDBDBD
+      padding-left: 34px
+      border-radius: 4px
+      max-width: 100%
+    &__btn
+      font-weight: bold
+      font-size: 12px
+      color: #FFFFFF
+      border-top-right-radius: 4px
+      border-bottom-right-radius: 4px

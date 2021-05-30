@@ -1,0 +1,97 @@
+.reviews
+  padding: 39px 0 40px 0
+  &__header
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-stars
+    &__wrapper
+      width: 8px
+      margin-right: 2px
+      height: 8px
+    &__image
+      width: 8px
+      height: 8px
+      object-fit: cover
+      margin-right: 1px
+  &-slider
+    margin-top: 70px
+    &__item
+      position: relative
+      padding: 55px 60px 30px 63px
+      +flex(column)
+      align-items: center
+      max-width: 730px
+      background-color: $font-white
+      margin: 45px auto 0
+      border-radius: 8px
+      &:before, &:after
+        content: ''
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        position: absolute
+        width: 70px
+        height: 48px
+        z-index: 10
+      &:before
+        content: ''
+        background-image: url("../img/reviews-slider-bg-1.svg")
+        left: 64px
+        top: 13px
+      &:after
+        content: ''
+        background-image: url("../img/reviews-slider-bg-2.svg")
+        right: 60px
+        top: 119px
+    &__user-image
+      object-fit: cover
+      border-radius: 50%
+      position: absolute
+      left: 50%
+      top: -45px
+      transform: translateX(-50%)
+      width: 90px
+      height: 90px
+    &__user-name
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      color: $buttons-red
+    &__user-data
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-top: 10px
+    &__stars
+      margin-top: 5px
+      display: flex
+    &__user-message
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      margin-top: 30px
+      max-width: 536px
+      max-height: 115px
+      overflow-y: auto
+    &__button
+      position: absolute
+      width: 30px
+      height: 30px
+      top: 46%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      border: none
+      z-index: 99
+      background-color: transparent
+      &--prev
+        background-image: url("../img/reviews-slider-arrow-left.svg")
+        left: 19px
+      &--next
+        background-image: url("../img/reviews-slider-arrow-right.svg")
+        right: 17px
