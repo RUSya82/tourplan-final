@@ -25,6 +25,8 @@
       padding: 22px 0
       font-size: 12px
       line-height: 15px
+      &__search-form
+        margin-left: auto
     &-top
       height: 100px
       &__search
@@ -109,6 +111,9 @@
     max-width: 700px
     width: 92%
   .navbar
+    &-menu
+      &__search-form
+        margin-left: 49px
     &-top
       &__search
         margin-left: 49px
@@ -126,6 +131,7 @@
         width: 100%
     &-booking
       margin-right: 20px
+      padding: 30px 21px 29px 25px
     &__container
       padding-top: 21px
 
@@ -197,6 +203,9 @@
   .navbar
     &-menu
       font-size: 10px
+      &__search-form
+        width: 280px
+        margin-left: auto
     &-top
       &__search
         width: 280px
@@ -230,14 +239,19 @@
         margin-bottom: 27px
       &__search
         margin-bottom: 39px
+      &__user-a
+        &_mobile_column
+          flex-direction: column
+      &__search-form
+        width: 245px
     &-top
       &__menu-button
         display: flex
         border: none
-      &--mobile-hidden
+      &_mobile_hidden
         display: none
       &__user
-        &--mobile
+        &_mobile_column
           flex-direction: column
       &__search
         width: 245px
@@ -251,6 +265,11 @@
     &__avatar
       &--mobile
         margin-bottom: 10px
+    &_mobile_hidden
+      display: none
+  .search
+    &_mobile_hidden
+      display: none
 
   .hotel
     padding-bottom: 60px
@@ -374,6 +393,8 @@
         margin-top: 15px
       &__button
         margin-top: 15px
+    &--active
+      align-items: flex-start
 
 
 @media (max-width: 320px)
@@ -431,7 +452,7 @@
     &__text
       font-size: 20px
       margin-bottom: 25px
-      &--big
+      &-big
         font-size: 30px
   .reviews
     padding-bottom: 50px
@@ -515,5 +536,13 @@
     align-items: flex-start
   .required-fields
     order: -1
+  .se-order-1
+    order: 1
+  .se-order-2
+    order: 2
+  .se-order-3
+    order: 3
+  .se-order-4
+    order: 4
 
 

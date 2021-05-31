@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width,  initial-scale=1.0,  minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
           rel="stylesheet">
-<!--    <link rel="stylesheet" href="css/aos.css">-->
-<!--    <link rel="stylesheet" href="css/swiper-bundle.min.css">-->
     <title>Best tour plan - Hotel Booking</title>
 </head>
 <body>
 <header class="navbar navbar--mobile-fixed">
     <div class="navbar-top">
         <div class="container navbar-top__container">
-            <a href="/" class="logo navbar__logo">
+            <a href="index.html" class="logo navbar__logo">
                 <img src="img/logo-gorisontal.svg" alt="Logo: Best Tour Plan" class="logo__img">
             </a>
-            <form action="#" class="search navbar-top__search navbar-top--mobile-hidden">
+            <form action="#" class="search navbar-top__search search_mobile_hidden">
                 <input type="text" class="search__input" placeholder="Search Location">
                 <button class="search__btn">
                     <img src="img/search-icon.svg" alt="icon: search">
                 </button>
             </form>
-            <a href="#" class="user navbar-top__user navbar-top--mobile-hidden">
+            <a href="#" class="user navbar-top__user user_mobile_hidden">
                 <img src="img/user-avatar.jpeg" class="user__avatar" alt="avatar: Nathan">
                 <span class="user__name">Nathan</span>
             </a>
@@ -44,13 +42,13 @@
         <div class="container navbar__container">
             <ul class="navbar-menu__wrapper">
                 <li class="navbar-menu__item navbar-menu__user navbar-menu__item--mobile-visible">
-                    <a href="#" class="user navbar-top__user navbar-top__user--mobile">
+                    <a href="#" class="user navbar-menu__user-a navbar-menu__user-a_mobile_column ">
                         <img src="img/user-avatar.jpeg" class="user__avatar user__avatar--mobile" alt="avatar: Nathan">
                         <span class="user__name user__name--mobile">Nathan</span>
                     </a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__search navbar-menu__item--mobile-visible">
-                    <form action="#" class="search navbar-top__search ">
+                    <form action="#" class="search navbar-menu__search-form ">
                         <input type="text" class="search__input" placeholder="Search Location">
                         <button class="search__btn">
                             <img src="img/search-icon.svg" alt="icon: search">
@@ -58,32 +56,32 @@
                     </form>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">All Deals</a>
+                    <a href="#" class="navbar-menu__link hover-init">All Deals</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">Hotels</a>
+                    <a href="#" class="navbar-menu__link hover-init">Hotels</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">Activities</a>
+                    <a href="#" class="navbar-menu__link hover-init">Activities</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+                    <a href="#" class="navbar-menu__link hover-init">Hotel Day Packages</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">Restaurants</a>
+                    <a href="#" class="navbar-menu__link hover-init">Restaurants</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">Events</a>
+                    <a href="#" class="navbar-menu__link hover-init">Events</a>
                 </li>
                 <li class="navbar-menu__item">
-                    <a href="#" class="navbar-menu__link">Rodrigues</a>
+                    <a href="#" class="navbar-menu__link hover-init">Rodrigues</a>
                 </li>
             </ul>
 
         </div>
     </nav>
 </header>
-<section class="breadcrumbs">
+<div class="breadcrumbs">
     <div class="container breadcrumbs__container">
         <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list__item"><a href="#">Home</a></li>
@@ -91,7 +89,7 @@
             <li class="breadcrumbs-list__item">Grand Hilton Hotel</li>
         </ul>
     </div>
-</section>
+</div>
 <!-- /.breadcrumbs -->
 <div class="hotel">
     <div class="hotel-top">
@@ -156,7 +154,7 @@
                 </div>
             </div>
             <div class="hotel-bottom__right">
-                <div class="hotel-booking hotel-bottom__booking" data-aos="fade-up-left">
+                <div class="hotel-booking hotel-bottom__booking" data-aos="fade-up">
                     <div class="booking-row">
                         <div class="hotel-booking__price">
                             <span class="flex hotel-booking__price-start">price starts as</span>
@@ -193,7 +191,7 @@
                 <!--  hotel-booking-->
                 <div class="hotel-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7894180051567!2d100.8580743153429!3d12.921251919475894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102964710249c87%3A0x414d2a89497dbf77!2z0JrQvtC30Lgg0JHQuNGH!5e0!3m2!1sru!2sru!4v1621172715892!5m2!1sru!2sru"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            class="google-map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <!-- hotel-bottom__right-->
@@ -206,7 +204,7 @@
     <div class="container newsletter-container">
         <div class="newsletter__text">
             <span>subscribe to our</span>
-            <h3 class="newsletter__text--big">Newsletter</h3>
+            <h3 class="newsletter__text-big">Newsletter</h3>
         </div>
         <form action="#" class="search newsletter-input newsletter__input subscribe-form" data-name="subscribe-form">
             <div class="input-wrapper newsletter__input-wrapper">
@@ -235,7 +233,7 @@
                                  alt="Foro user: Megan Fox">
                             <p class="reviews-slider__user-name">Megan Fox</p>
                             <p class="reviews-slider__user-data">Stayed 18 Nov, 2019</p>
-                            <div class="reviews-slider__stars">
+                            <div class="reviews-slider__stars reviews-stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
@@ -262,7 +260,7 @@
                                  alt="Foro user: Megan Fox">
                             <p class="reviews-slider__user-name">Sarah Persevald</p>
                             <p class="reviews-slider__user-data">Stayed 22 May, 2019</p>
-                            <div class="reviews-slider__stars">
+                            <div class="reviews-slider__stars reviews-stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
@@ -289,7 +287,7 @@
                                  alt="Foro user: Megan Fox">
                             <p class="reviews-slider__user-name">Mika Dolla</p>
                             <p class="reviews-slider__user-data">Stayed 33 Dec, 2020</p>
-                            <div class="reviews-slider__stars">
+                            <div class="reviews-slider__stars reviews-stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
@@ -316,7 +314,7 @@
                                  alt="Foro user: Megan Fox">
                             <p class="reviews-slider__user-name">Megan Fox</p>
                             <p class="reviews-slider__user-data">Stayed 18 Nov, 2019</p>
-                            <div class="reviews-slider__stars">
+                            <div class="reviews-slider__stars reviews-stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
                                 <img src="img/star.svg" class="reviews-stars__image" alt="user five stars">
@@ -351,25 +349,25 @@
             <h3>Other Activities</h3>
         </div>
         <div class="activities-wrapper">
-            <div class="activities-wrapper__item activities-item" data-aos="fade-up-right" data-aos-duration="100" >
+            <div class="activities-wrapper__item activities-item se-order-1" data-aos="fade-up-right" data-aos-duration="100" >
                 <img src="img/activity-1.png" alt="Hotel Activity" class="activities-item__image">
                 <h4 class="activities-item__header">The curious corner of chamarel</h4>
                 <button class="site-button activities-item__button modal-activator">Book Now</button>
                 <div class="activities-item__bg"></div>
             </div>
-            <div class="activities-wrapper__item activities-item" data-aos="fade-up-right" data-aos-duration="300" >
+            <div class="activities-wrapper__item activities-item se-order-3" data-aos="fade-up-right" data-aos-duration="300" >
                 <img src="img/activity-2.png" alt="Hotel Activity" class="activities-item__image">
                 <h4 class="activities-item__header">Gymkhana club golf course</h4>
                 <button class="site-button activities-item__button modal-activator">Book Now</button>
                 <div class="activities-item__bg"></div>
             </div>
-            <div class="activities-wrapper__item activities-item" data-aos="fade-up-right" data-aos-duration="500" >
+            <div class="activities-wrapper__item activities-item se-order-2" data-aos="fade-up-right" data-aos-duration="500" >
                 <img src="img/activity-3.png" alt="Hotel Activity" class="activities-item__image">
                 <h4 class="activities-item__header">Tamarind falls hiking trip - full day</h4>
                 <button class="site-button activities-item__button modal-activator">Book Now</button>
                 <div class="activities-item__bg"></div>
             </div>
-            <div class="activities-wrapper__item activities-item" data-aos="fade-up-right" data-aos-duration="700" >
+            <div class="activities-wrapper__item activities-item se-order-4" data-aos="fade-up-right" data-aos-duration="700" >
                 <img src="img/activity-4.png" alt="Hotel Activity" class="activities-item__image">
                 <h4 class="activities-item__header">The blue marine discovery quest</h4>
                 <button class="site-button activities-item__button modal-activator">Book Now</button>
@@ -386,7 +384,7 @@
             <div class="footer__logo">
                 <img src="img/footer-logo.png" alt="logo: Best Tour Plan">
             </div>
-            <div class="footer__categories footer-categories__header">
+            <div class="footer__categories footer-categories-header">
                 <h3 class="footer-header footer__header">
                     ALL CATEGORIES
                 </h3>
@@ -444,7 +442,7 @@
                 <h3 class="footer-header footer__header footer-contacts__header">
                     Contact Details
                 </h3>
-                <h4 class="footer-contacts__header--small">Feel free to contact us by phone, email or by our contact form</h4>
+                <h4 class="footer-contacts__header-small">Feel free to contact us by phone, email or by our contact form</h4>
                 <div class="footer-contacts__item">
                     <div class="footer-contacts__icon">
                         <img src="img/map-dot.svg" alt="footer map icon">
@@ -461,13 +459,13 @@
                     </div>
                     <ul class="footer__list footer-list">
                         <li class="footer-list__item">
-                            Tel (business hours) : <a href="tel:2691500">269 1500</a>
+                            Tel (business hours) : <a href="tel:2691500" class="hover-init">269 1500</a>
                         </li>
                         <li class="footer-list__item">
-                            Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 20:00 pm)
+                            Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="hover-init">52-56-61-38</a> (08:00 am – 20:00 pm)
                         </li>
                         <li class="footer-list__item">
-                            Tel (hotline) Sunday: <a href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)
+                            Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="hover-init">52-56-61-38</a> (08:00 am – 14:00 pm)
                         </li>
                     </ul>
                 </div>
@@ -476,8 +474,8 @@
                         <img src="img/footer-mail-icon.svg" alt="footer mail icon">
                     </div>
                     <ul class="footer__list footer-list">
-                        <li class="footer-list__item">
-                            <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+                        <li class="footer-list__item hover-init">
+                            <a href="mailto:cherly.lawson@example.com" class="hover-init">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>

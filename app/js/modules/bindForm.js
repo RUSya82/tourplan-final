@@ -1,7 +1,6 @@
 import Validator from "./validator";
 
 const bindForm = (form, callback) => {
-    console.log(form)
     const postData = (body) => {
         return fetch('send.php', {
             body: body,
@@ -30,7 +29,7 @@ const bindForm = (form, callback) => {
                         if (response.status !== 200) {
                             throw new Error('status not 200');
                         }
-                        return response.text()
+                        return response.text();
                     }).then((response) => {
                     form.reset();
                     if(callback){
@@ -60,26 +59,26 @@ const bindForm = (form, callback) => {
         if(phoneField){
             initArray.push({
                 element: phoneField,
-                pattern: new RegExp('[+375|8][(][0-9]{2,3}[)][0-9]{3}[-][0-9]{2}[-][0-9]{2}', ''),
-            })
+                pattern: new RegExp('[+7][(][0-9]{3}[)][0-9]{3}[-][0-9]{2}[-][0-9]{2}', ''),
+            });
         }
         if(nameField){
             initArray.push({
                 element: nameField,
                 method: 'name'
-            })
+            });
         }
         if(message){
             initArray.push({
                 element: message,
                 pattern: new RegExp('^[А-ЯЁA-Zа-яёa-z., ]*$', 'i')
-            })
+            });
         }
         if(email){
             initArray.push({
                 element: email,
                 method: 'email'
-            })
+            });
         }
         formSender(form, new Validator(form, initArray));
 };

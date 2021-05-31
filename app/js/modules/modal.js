@@ -104,22 +104,24 @@ class Modal {
             const body = document.body;
             body.style.overflow = 'auto';
             body.style.marginRight = `0`;
-        }, 200)
+        }, 200);
+    }
+    static modalGetInstance(){
+        const data = [];
+        return function (params){
+            let object = data.find(item => item.modal === params.modal);
+            console.log(object);
+            if(object){
+                return object;
+            } else {
+                const obj = new Modal(params);
+                data.push(obj);
+                return obj;
+            }
+        };
     }
 }
 
-function modalGetInstance(){
-    const data = [];
-    return function (params){
-        let object = data.find(item => item.modal === params.modal);
-        if(object){
-            return object;
-        } else {
-            const obj = new Modal(params);
-            data.push(obj);
-            return obj;
-        }
-    };
-}
-const modalInstance = modalGetInstance();
+
+const modalInstance = Modal.modalGetInstance();
 export default modalInstance;
