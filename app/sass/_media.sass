@@ -476,6 +476,7 @@
         font-size: 12px
         line-height: 160%
         max-height: 285px
+        text-align: left
   .activities
     padding-top: 43px
     padding-bottom: 33px
@@ -546,3 +547,14 @@
     order: 4
 
 
+@media (min-width: 992px)
+  .hover-init
+    &:hover
+      color: $buttons-hover
+  .site-button
+    &:hover
+      background-color: $buttons-hover
+  .search
+    &__btn
+      &:hover
+        background-color: $buttons-hover

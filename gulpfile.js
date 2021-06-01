@@ -130,5 +130,5 @@ gulp.task('serve', function(done) {
     done();
 });
 
-gulp.task('default', gulp.series('sass', 'html' ,'build-js','serve'));
+gulp.task('default', gulp.series('sass', 'html' ,'build-prod-js','serve'));
 gulp.task('noJs', gulp.series('sass', 'html' , 'fonts', 'images','serve'));
